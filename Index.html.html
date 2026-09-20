@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwaj Collection | 24K Gold Plated Luxury Jewellery - Cash On Delivery</title>
+  
+  <!-- Google Fonts: Playfair Display & Montserrat as specified in Brand Guide -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for E-commerce & Trust Badges -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandEmerald: '#0D3B32',
+            brandGold: '#C6A15B',
+            brandGoldDark: '#A8833E',
+            brandCream: '#F7F1E5',
+            brandRichBrown: '#4B2E20',
+            brandSage: '#6B7A63',
+            brandEmeraldDark: '#082520'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold': '0 10px 30px -5px rgba(198, 161, 91, 0.3)',
+            'emerald': '0 15px 35px -5px rgba(13, 59, 50, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Islamic & Mughal inspired filigree motifs and gold gradients */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F9E7BA 0%, #C6A15B 50%, #A37930 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, #0D3B32, #C6A15B, #0D3B32) 1;
+    }
+    .hero-pattern {
+      background-color: #0D3B32;
+      background-image: radial-gradient(#C6A15B 0.75px, transparent 0.75px), radial-gradient(#C6A15B 0.75px, #0D3B32 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      background-opacity: 0.08;
+    }
+    .badge-pulse {
+      animation: pulseGlow 2.5s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(198, 161, 91, 0.4); }
+      50% { box-shadow: 0 0 0 10px rgba(198, 161, 91, 0); }
+    }
+  </style>
+</head>
+
+<body class="bg-brandCream text-[#2C241D] font-sans antialiased overflow-x-hidden selection:bg-brandGold selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brandEmeraldDark text-brandCream py-2 px-4 border-b border-brandGold/30 text-xs sm:text-sm font-medium">
+    <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 mx-auto sm:mx-0">
+        <span class="inline-block w-2 h-2 rounded-full bg-brandGold animate-ping"></span>
+        <span class="text-brandGold font-semibold">CASH ON DELIVERY:</span>
+        <span>All Over Pakistan | Pay When You Receive</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-xs text-brandCream/90">
+        <span><i class="fa-solid fa-gift text-brandGold mr-1.5"></i> Luxury Velvet Box Free</span>
+        <span><i class="fa-solid fa-box-open text-brandGold mr-1.5"></i> Checking Parcel Allowed</span>
+        <a href="https://wa.me/923025118800" target="_blank" class="hover:text-brandGold transition-colors font-semibold flex items-center gap-1.5 text-brandGold">
+          <i class="fa-brands fa-whatsapp text-sm"></i> Helpline: 0302 5118800
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-brandEmerald/95 backdrop-blur-md border-b border-brandGold/30 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+      
+      <!-- Brand Logo Section (With direct logo.png support, instant uploader & 1:1 Vector Replica) -->
+      <div class="flex items-center gap-3.5 group">
+        
+        <!-- Interactive Medallion Container with Upload Action -->
+        <div class="relative">
+          <label for="brand-logo-file" class="cursor-pointer block relative group/logo" title="Click to upload your original logo PNG/JPG">
+            
+            <!-- Real Image Slot (Loads logo.png or custom uploaded image) -->
+            <img 
+              id="main-brand-logo-img" 
+              src="logo.png" 
+              alt="Riwaj Collection Original Logo" 
+              class="brand-logo-target w-14 h-14 sm:w-16 sm:h-16 object-contain rounded-full border-2 border-brandGold bg-brandEmerald p-1 shadow-gold hidden"
+              onload="handleLogoLoadSuccess(this)"
+              onerror="handleLogoLoadError(this)"
+            />
+
+            <!-- High-Precision 1:1 Vector SVG Replica of Concept 2 Medallion Crest from Reference -->
+            <div id="main-brand-logo-svg" class="brand-logo-fallback w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-brandGold bg-brandEmerald p-1 relative shadow-gold flex items-center justify-center group-hover/logo:scale-105 transition-transform duration-300">
+              <svg viewBox="0 0 200 200" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Top Diamond Lotus Finial -->
+                <path d="M100 4 L107 14 L100 24 L93 14 Z" fill="#C6A15B" stroke="#F9E7BA" stroke-width="0.8"/>
+                <path d="M93 14 C86 10, 80 14, 84 20 C88 18, 93 16, 95 18" stroke="#C6A15B" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                <path d="M107 14 C114 10, 120 14, 116 20 C112 18, 107 16, 105 18" stroke="#C6A15B" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+                <!-- Outer Ornate Floral Filigree Ring -->
+                <circle cx="100" cy="100" r="88" stroke="#C6A15B" stroke-width="2" stroke-dasharray="6 3"/>
+                <circle cx="100" cy="100" r="82" stroke="#C6A15B" stroke-width="1.5"/>
+                <circle cx="100" cy="100" r="74" fill="#0D3B32" stroke="#F9E7BA" stroke-width="1"/>
+
+                <!-- Decorative Arch Flourishes & Petals -->
+                <g stroke="#C6A15B" stroke-width="1.4" fill="none">
+                  <!-- Cardinal Flourishes -->
+                  <path d="M100 26 C90 38, 110 38, 100 50" />
+                  <path d="M100 174 C90 162, 110 162, 100 150" />
+                  <path d="M26 100 C38 90, 38 110, 50 100" />
+                  <path d="M174 100 C162 90, 162 110, 150 100" />
+
+                  <!-- Corner Rosettes -->
+                  <circle cx="48" cy="48" r="3.5" fill="#C6A15B" />
+                  <circle cx="152" cy="48" r="3.5" fill="#C6A15B" />
+                  <circle cx="48" cy="152" r="3.5" fill="#C6A15B" />
+                  <circle cx="152" cy="152" r="3.5" fill="#C6A15B" />
+                </g>
+
+                <!-- Inner Ornate 'R' with Vine Curve from Concept 2 -->
+                <g>
+                  <!-- Serif 'R' Stem and Bowl -->
+                  <path d="M82 66 L98 66 C114 66, 126 73, 126 86 C126 96, 118 103, 106 106 L128 134 L114 134 L95 108 L82 108 L82 134 L72 134 L72 66 Z M82 76 L82 98 L98 98 C108 98, 114 94, 114 87 C114 80, 108 76, 98 76 Z" fill="url(#goldGradient)" />
+                  <!-- Botanical Leaf Swirl through the 'R' -->
+                  <path d="M96 95 C108 85, 122 92, 116 106 C112 114, 102 112, 104 122 C105 127, 110 128, 115 127" stroke="#F9E7BA" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                  <path d="M116 98 C122 96, 125 101, 120 104 Z" fill="#C6A15B"/>
+                </g>
+
+                <!-- Bottom Drop Finial Motif -->
+                <path d="M100 196 L106 186 L100 176 L94 186 Z" fill="#C6A15B" stroke="#F9E7BA" stroke-width="0.8"/>
+
+                <!-- Gold Shading Gradient Definition -->
+                <defs>
+                  <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFF0D0" />
+                    <stop offset="50%" stop-color="#C6A15B" />
+                    <stop offset="100%" stop-color="#8E6B28" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Tiny Upload Indicator Overlay -->
+            <span class="absolute -bottom-1 -right-1 bg-brandGold text-brandEmeraldDark w-5 h-5 rounded-full flex items-center justify-center text-[10px] shadow border border-brandEmerald group-hover/logo:scale-110 transition-transform" title="Upload original logo image file">
+              <i class="fa-solid fa-camera"></i>
+            </span>
+          </label>
+
+          <!-- Hidden File Input for Live Image Uploading -->
+          <input 
+            type="file" 
+            id="brand-logo-file" 
+            accept="image/*" 
+            class="hidden" 
+            onchange="handleUserLogoUpload(event)"
+          />
+        </div>
+
+        <!-- Typography Branding Lockup from Concept 2 -->
+        <a href="#" class="flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="font-serif tracking-[0.25em] text-xl sm:text-2xl font-bold gold-gradient-text uppercase leading-none">RIWAJ</span>
+          </div>
+          <div class="flex items-center gap-1 mt-1 text-[8px] sm:text-[10px] tracking-[0.35em] text-brandGold font-semibold uppercase">
+            <span>✦</span>
+            <span>COLLECTION</span>
+            <span>✦</span>
+          </div>
+          <span class="text-[7px] sm:text-[8px] tracking-[0.22em] text-brandCream/70 uppercase font-light mt-0.5">
+            • Elegance In Every Detail •
+          </span>
+        </a>
+
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-brandCream/90">
+        <a href="#collection" class="hover:text-brandGold transition-colors tracking-wide">Jewellery Collection</a>
+        <a href="#bridal" class="hover:text-brandGold transition-colors tracking-wide">Bridal Specials</a>
+        <a href="#features" class="hover:text-brandGold transition-colors tracking-wide">Why Choose Us</a>
+        <a href="#reviews" class="hover:text-brandGold transition-colors tracking-wide">Customer Reviews</a>
+        <a href="#cod-order" class="hover:text-brandGold transition-colors tracking-wide">COD Order Form</a>
+      </nav>
+
+      <!-- Quick Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="#cod-order" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-brandGold to-brandGoldDark text-brandEmeraldDark px-4 py-2.5 rounded-full font-semibold text-xs tracking-wider uppercase shadow-gold hover:brightness-110 active:scale-95 transition-all">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Order COD</span>
+        </a>
+        <a href="https://wa.me/923025118800?text=Salam%20Riwaj%20Collection,%20I%20want%20to%20inquire%20about%20your%20jewellery" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-4 py-2.5 rounded-full font-semibold text-xs tracking-wide shadow-md active:scale-95 transition-all">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span class="hidden md:inline">0302 5118800</span>
+          <span class="md:hidden">WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-brandEmerald text-brandCream overflow-hidden border-b border-brandGold/40">
+    <!-- Subtle Background Gold Leaf Glow -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-brandGold/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brandGold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brandEmeraldDark/90 border border-brandGold/50 text-brandGold text-xs font-semibold tracking-wider uppercase">
+            <i class="fa-solid fa-gem"></i>
+            <span>Premium 24K Gold Plated Artificial Jewellery</span>
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-brandCream">
+            Elegance In Every Detail, <br>
+            <span class="gold-gradient-text italic">Crafted For Royalty</span>
+          </h1>
+
+          <p class="text-brandCream/85 text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Riwaj Collection brings you the finest 24K gold plated jewellery crafted for your most precious moments. Hand-finished Kundan, Polki, Meenakari & Bridal sets that match authentic gold finish without the hefty price tag.
+          </p>
+
+          <!-- Bullet Highlights -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm font-medium text-brandCream/90">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brandGold"></i>
+              <span>Cash on Delivery</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brandGold"></i>
+              <span>Open Parcel Allowed</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brandGold"></i>
+              <span>Luxury Velvet Box</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#collection" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-brandGold to-brandGoldDark text-brandEmeraldDark font-bold text-sm tracking-wider uppercase text-center shadow-gold hover:shadow-xl hover:scale-105 active:scale-95 transition-all">
+              Explore Collection <i class="fa-solid fa-arrow-down ml-2"></i>
+            </a>
+            <a href="#cod-order" class="w-full sm:w-auto px-8 py-4 rounded-full border border-brandGold/70 hover:bg-brandGold/10 text-brandCream font-semibold text-sm tracking-wide text-center transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-receipt text-brandGold"></i>
+              Instant COD Order
+            </a>
+          </div>
+
+          <!-- Delivery Guarantee Micro Badge -->
+          <div class="pt-2 flex items-center justify-center lg:justify-start gap-3 text-xs text-brandCream/70">
+            <img src="https://placehold.co/40x24/0D3B32/C6A15B?text=🇵🇰" alt="Pakistan Flag" class="rounded border border-brandGold/30" />
+            <span>Fast 2-4 days express delivery across all cities & villages in Pakistan</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Gold Frame -->
+            <div class="absolute -inset-3 rounded-2xl border-2 border-brandGold/40 translate-x-2 translate-y-2 pointer-events-none"></div>
+            
+            <div class="relative bg-brandEmeraldDark rounded-2xl overflow-hidden shadow-2xl border border-brandGold/50">
+              <img 
+                src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80" 
+                alt="Riwaj Collection Luxury Jewellery" 
+                class="w-full h-[420px] object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                onerror="this.src='https://placehold.co/800x900/0D3B32/C6A15B?text=Riwaj+Jewellery+Collection'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brandEmeraldDark via-transparent to-transparent"></div>
+
+              <!-- Floating Featured Card -->
+              <div class="absolute bottom-4 left-4 right-4 bg-brandEmerald/90 backdrop-blur-md p-4 rounded-xl border border-brandGold/50 text-brandCream">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] tracking-widest text-brandGold font-bold uppercase">24K Gold Plated • Signature</span>
+                    <h3 class="font-serif font-bold text-base text-brandCream">Mughlai Kundan Choker Set</h3>
+                    <p class="text-xs text-brandGold font-bold mt-0.5">Special Price: Rs. 4,450 <span class="text-xs line-through text-brandCream/50 ml-1">Rs. 6,500</span></p>
+                  </div>
+                  <button onclick="quickOrder('Mughlai Kundan Choker Set', 4450)" class="bg-brandGold text-brandEmeraldDark font-bold px-3 py-2 rounded-lg text-xs hover:bg-white transition-colors shadow-md">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+
+              <!-- Top Left Tag -->
+              <div class="absolute top-4 left-4 bg-brandGold text-brandEmeraldDark text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                ★ Best Seller 2026
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand USPs (Directly extracted from user brand sheet) -->
+  <section class="bg-brandCream border-b border-brandGold/30 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+        
+        <!-- USP 1 -->
+        <div class="flex flex-col items-center p-3 rounded-xl hover:bg-white/60 transition-colors">
+          <div class="w-12 h-12 rounded-full bg-brandEmerald/10 text-brandGold flex items-center justify-center text-xl mb-3 border border-brandGold/30">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-brandEmerald mb-1">PREMIUM QUALITY</h4>
+          <p class="text-[11px] text-brandRichBrown/80 leading-snug">Original Brass & Semi-Precious Stones</p>
+        </div>
+
+        <!-- USP 2 -->
+        <div class="flex flex-col items-center p-3 rounded-xl hover:bg-white/60 transition-colors">
+          <div class="w-12 h-12 rounded-full bg-brandEmerald/10 text-brandGold flex items-center justify-center text-xl mb-3 border border-brandGold/30">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-brandEmerald mb-1">TRUSTED BRAND</h4>
+          <p class="text-[11px] text-brandRichBrown/80 leading-snug">10,000+ Happy Pakistani Customers</p>
+        </div>
+
+        <!-- USP 3 -->
+        <div class="flex flex-col items-center p-3 rounded-xl hover:bg-white/60 transition-colors">
+          <div class="w-12 h-12 rounded-full bg-brandEmerald/10 text-brandGold flex items-center justify-center text-xl mb-3 border border-brandGold/30">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-brandEmerald mb-1">PERFECT GIFTING</h4>
+          <p class="text-[11px] text-brandRichBrown/80 leading-snug">Royal Green Velvet Box Included</p>
+        </div>
+
+        <!-- USP 4 -->
+        <div class="flex flex-col items-center p-3 rounded-xl hover:bg-white/60 transition-colors">
+          <div class="w-12 h-12 rounded-full bg-brandEmerald/10 text-brandGold flex items-center justify-center text-xl mb-3 border border-brandGold/30">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-brandEmerald mb-1">CASH ON DELIVERY</h4>
+          <p class="text-[11px] text-brandRichBrown/80 leading-snug">Pay Only When Parcel Reaches You</p>
+        </div>
+
+        <!-- USP 5 -->
+        <div class="flex flex-col items-center p-3 rounded-xl hover:bg-white/60 transition-colors">
+          <div class="w-12 h-12 rounded-full bg-brandEmerald/10 text-brandGold flex items-center justify-center text-xl mb-3 border border-brandGold/30">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-brandEmerald mb-1">24K GOLD PLATED</h4>
+          <p class="text-[11px] text-brandRichBrown/80 leading-snug">Long-Lasting Triple Micron Coating</p>
+        </div>
+
+        <!-- USP 6 -->
+        <div class="flex flex-col items-center p-3 rounded-xl hover:bg-white/60 transition-colors">
+          <div class="w-12 h-12 rounded-full bg-brandEmerald/10 text-brandGold flex items-center justify-center text-xl mb-3 border border-brandGold/30">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h4 class="font-serif font-bold text-sm text-brandEmerald mb-1">WHATSAPP HELP</h4>
+          <p class="text-[11px] text-brandRichBrown/80 leading-snug">Fast Response on 0302 5118800</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Section -->
+  <section id="collection" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="flex items-center justify-center gap-2 mb-2">
+        <span class="h-0.5 w-12 bg-brandGold"></span>
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brandEmerald font-sans">Handcrafted Luxury</span>
+        <span class="h-0.5 w-12 bg-brandGold"></span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brandEmerald">
+        Signature Jewellery Collection
+      </h2>
+      <p class="text-brandRichBrown/80 text-sm sm:text-base mt-3">
+        Select your favorite pieces for Weddings, Mehndi, Barat, Walima or Daily Elegance. Order seamlessly with Cash on Delivery.
+      </p>
+
+      <!-- Category Filter Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8">
+        <button onclick="filterCategory('all', this)" class="category-btn active-filter px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-brandEmerald text-brandGold border border-brandGold shadow-md transition-all">
+          All Pieces
+        </button>
+        <button onclick="filterCategory('bridal', this)" class="category-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-brandRichBrown border border-brandGold/40 hover:border-brandGold transition-all">
+          Bridal Sets
+        </button>
+        <button onclick="filterCategory('necklaces', this)" class="category-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-brandRichBrown border border-brandGold/40 hover:border-brandGold transition-all">
+          Chokers & Mala
+        </button>
+        <button onclick="filterCategory('earrings', this)" class="category-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-brandRichBrown border border-brandGold/40 hover:border-brandGold transition-all">
+          Jhumkas & Tops
+        </button>
+        <button onclick="filterCategory('bangles', this)" class="category-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-brandRichBrown border border-brandGold/40 hover:border-brandGold transition-all">
+          Karas & Bangles
+        </button>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Product 1 -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden border border-brandGold/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col" data-category="bridal">
+        <div class="relative overflow-hidden bg-brandCream h-72">
+          <img 
+            src="https://images.unsplash.com/photo-1611591475152-478311399c4c?auto=format&fit=crop&w=700&q=80" 
+            alt="Noor-e-Haram Royal Bridal Choker Set" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            onerror="this.src='https://placehold.co/600x600/0D3B32/C6A15B?text=Bridal+Choker+Set'"
+          />
+          <div class="absolute top-3 left-3 bg-brandEmerald text-brandGold text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-brandGold/50">
+            24K Gold Plated
+          </div>
+          <div class="absolute top-3 right-3 bg-red-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">
+            COD Available
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-gray-500 text-xs ml-1">(48 reviews)</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-brandEmerald">Noor-e-Haram Royal Bridal Set</h3>
+            <p class="text-xs text-brandRichBrown/70 mt-1 line-clamp-2">Complete set includes Royal Choker, Matching Jhumkas, Maang Tikka & Saharay in Emerald Green Meena.</p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-brandCream flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-500 line-through">Rs. 6,800</span>
+              <div class="text-xl font-bold text-brandEmerald font-serif">Rs. 4,850</div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="quickOrder('Noor-e-Haram Royal Bridal Set', 4850)" class="bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Order COD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden border border-brandGold/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col" data-category="earrings">
+        <div class="relative overflow-hidden bg-brandCream h-72">
+          <img 
+            src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=700&q=80" 
+            alt="Mughlai Emerald Polki Jhumkas" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            onerror="this.src='https://placehold.co/600x600/0D3B32/C6A15B?text=Polki+Jhumkas'"
+          />
+          <div class="absolute top-3 left-3 bg-brandEmerald text-brandGold text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-brandGold/50">
+            Handcrafted
+          </div>
+          <div class="absolute top-3 right-3 bg-brandGold text-brandEmeraldDark text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">
+            Top Seller
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-gray-500 text-xs ml-1">(92 reviews)</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-brandEmerald">Zamarrud Emerald Polki Jhumkas</h3>
+            <p class="text-xs text-brandRichBrown/70 mt-1 line-clamp-2">Authentic Kashmiri style bell jhumkas studded with teardrop emerald beads and pearl drops.</p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-brandCream flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-500 line-through">Rs. 3,200</span>
+              <div class="text-xl font-bold text-brandEmerald font-serif">Rs. 2,250</div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="quickOrder('Zamarrud Emerald Polki Jhumkas', 2250)" class="bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Order COD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden border border-brandGold/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col" data-category="bangles">
+        <div class="relative overflow-hidden bg-brandCream h-72">
+          <img 
+            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80" 
+            alt="Shehnai Carved Antique Karay (Set of 2)" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            onerror="this.src='https://placehold.co/600x600/0D3B32/C6A15B?text=Gold+Bangles+Set'"
+          />
+          <div class="absolute top-3 left-3 bg-brandEmerald text-brandGold text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-brandGold/50">
+            Openable Screw Fit
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="text-gray-500 text-xs ml-1">(64 reviews)</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-brandEmerald">Shehnai Carved Antique Karay (Pair)</h3>
+            <p class="text-xs text-brandRichBrown/70 mt-1 line-clamp-2">Intricate royal filigree engraved bangles with screw lock. Available in standard 2.4, 2.6 & 2.8 sizes.</p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-brandCream flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-500 line-through">Rs. 4,500</span>
+              <div class="text-xl font-bold text-brandEmerald font-serif">Rs. 3,150</div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="quickOrder('Shehnai Carved Antique Karay (Pair)', 3150)" class="bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Order COD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden border border-brandGold/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col" data-category="necklaces">
+        <div class="relative overflow-hidden bg-brandCream h-72">
+          <img 
+            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=80" 
+            alt="Dastoor Royal Guluband Necklace" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            onerror="this.src='https://placehold.co/600x600/0D3B32/C6A15B?text=Guluband+Necklace'"
+          />
+          <div class="absolute top-3 left-3 bg-brandEmerald text-brandGold text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-brandGold/50">
+            24K Micro Plated
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-gray-500 text-xs ml-1">(51 reviews)</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-brandEmerald">Dastoor Velvet Guluband Choker</h3>
+            <p class="text-xs text-brandRichBrown/70 mt-1 line-clamp-2">Neck-hugging antique gold choker with emerald stones, matched with earrings and adjustable dori.</p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-brandCream flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-500 line-through">Rs. 4,900</span>
+              <div class="text-xl font-bold text-brandEmerald font-serif">Rs. 3,650</div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="quickOrder('Dastoor Velvet Guluband Choker', 3650)" class="bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Order COD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden border border-brandGold/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col" data-category="bridal">
+        <div class="relative overflow-hidden bg-brandCream h-72">
+          <img 
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80" 
+            alt="Sitara Full Baroque Bridal Haar Set" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            onerror="this.src='https://placehold.co/600x600/0D3B32/C6A15B?text=Baroque+Bridal+Haar'"
+          />
+          <div class="absolute top-3 left-3 bg-brandEmerald text-brandGold text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-brandGold/50">
+            Bridal Heavy Edition
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-gray-500 text-xs ml-1">(37 reviews)</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-brandEmerald">Sitara Full Baroque Mala & Choker</h3>
+            <p class="text-xs text-brandRichBrown/70 mt-1 line-clamp-2">Grand 7-piece bridal ensemble: Long Mala, Royal Choker, Jhumkas, Teeka, Jhumar & Rings.</p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-brandCream flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-500 line-through">Rs. 9,500</span>
+              <div class="text-xl font-bold text-brandEmerald font-serif">Rs. 6,950</div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="quickOrder('Sitara Full Baroque Mala & Choker', 6950)" class="bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Order COD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden border border-brandGold/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col" data-category="necklaces">
+        <div class="relative overflow-hidden bg-brandCream h-72">
+          <img 
+            src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=700&q=80" 
+            alt="Teardrop Emerald Pendant Set" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            onerror="this.src='https://placehold.co/600x600/0D3B32/C6A15B?text=Emerald+Pendant+Set'"
+          />
+          <div class="absolute top-3 left-3 bg-brandEmerald text-brandGold text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-brandGold/50">
+            Everyday Elegance
+          </div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-gray-500 text-xs ml-1">(80 reviews)</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-brandEmerald">Teardrop Emerald Pendant Set</h3>
+            <p class="text-xs text-brandRichBrown/70 mt-1 line-clamp-2">Delicate antique gold chain with faceted green emerald center stone & matching drop tops.</p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-brandCream flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-500 line-through">Rs. 3,500</span>
+              <div class="text-xl font-bold text-brandEmerald font-serif">Rs. 2,450</div>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="quickOrder('Teardrop Emerald Pendant Set', 2450)" class="bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Order COD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Direct COD Order Form Section (Integrated Directly to WhatsApp 03025118800) -->
+  <section id="cod-order" class="py-16 sm:py-24 bg-brandEmerald text-brandCream relative overflow-hidden">
+    <!-- Background Decor -->
+    <div class="absolute inset-0 hero-pattern opacity-10 pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-brandEmeraldDark border border-brandGold/50 text-brandGold text-xs font-bold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-truck-fast mr-1"></i> Cash On Delivery Checkout
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brandCream">
+          Place Order & Pay at Doorstep
+        </h2>
+        <p class="text-brandCream/80 text-xs sm:text-sm mt-2">
+          Enter delivery details below. Order will automatically be submitted to our official WhatsApp helpline <span class="text-brandGold font-bold">0302 5118800</span> for instant tracking confirmation.
+        </p>
+      </div>
+
+      <!-- Order Form Card -->
+      <div class="bg-brandEmeraldDark/90 backdrop-blur-md rounded-2xl p-6 sm:p-10 border border-brandGold/40 shadow-2xl">
+        <form id="whatsapp-order-form" onsubmit="handleOrderSubmit(event)" class="space-y-6">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Customer Full Name -->
+            <div>
+              <label class="block text-xs font-semibold text-brandGold uppercase tracking-wider mb-2">
+                Aapka Naam (Customer Full Name) *
+              </label>
+              <div class="relative">
+                <i class="fa-solid fa-user absolute left-4 top-3.5 text-brandGold/70"></i>
+                <input 
+                  type="text" 
+                  id="cust-name" 
+                  required 
+                  placeholder="e.g. Fatima Tariq / Ayesha Khan" 
+                  class="w-full bg-brandEmerald border border-brandGold/40 rounded-xl pl-11 pr-4 py-3 text-sm text-brandCream placeholder-brandCream/40 focus:border-brandGold focus:ring-1 focus:ring-brandGold outline-none"
+                >
+              </div>
+            </div>
+
+            <!-- WhatsApp Number -->
+            <div>
+              <label class="block text-xs font-semibold text-brandGold uppercase tracking-wider mb-2">
+                WhatsApp / Phone Number *
+              </label>
+              <div class="relative">
+                <i class="fa-brands fa-whatsapp absolute left-4 top-3.5 text-brandGold/70 text-base"></i>
+                <input 
+                  type="tel" 
+                  id="cust-phone" 
+                  required 
+                  placeholder="e.g. 0300 1234567" 
+                  class="w-full bg-brandEmerald border border-brandGold/40 rounded-xl pl-11 pr-4 py-3 text-sm text-brandCream placeholder-brandCream/40 focus:border-brandGold focus:ring-1 focus:ring-brandGold outline-none"
+                >
+              </div>
+            </div>
+
+            <!-- City Selection -->
+            <div>
+              <label class="block text-xs font-semibold text-brandGold uppercase tracking-wider mb-2">
+                City / Shehar *
+              </label>
+              <div class="relative">
+                <i class="fa-solid fa-city absolute left-4 top-3.5 text-brandGold/70"></i>
+                <input 
+                  type="text" 
+                  id="cust-city" 
+                  required 
+                  placeholder="Lahore, Karachi, Islamabad, Sargodha, etc." 
+                  class="w-full bg-brandEmerald border border-brandGold/40 rounded-xl pl-11 pr-4 py-3 text-sm text-brandCream placeholder-brandCream/40 focus:border-brandGold focus:ring-1 focus:ring-brandGold outline-none"
+                >
+              </div>
+            </div>
+
+            <!-- Product Selection -->
+            <div>
+              <label class="block text-xs font-semibold text-brandGold uppercase tracking-wider mb-2">
+                Selected Jewellery Piece *
+              </label>
+              <div class="relative">
+                <i class="fa-solid fa-gem absolute left-4 top-3.5 text-brandGold/70"></i>
+                <select 
+                  id="cust-product" 
+                  onchange="updatePriceCalculation()"
+                  class="w-full bg-brandEmerald border border-brandGold/40 rounded-xl pl-11 pr-4 py-3 text-sm text-brandCream focus:border-brandGold focus:ring-1 focus:ring-brandGold outline-none"
+                >
+                  <option value="Noor-e-Haram Royal Bridal Set|4850">Noor-e-Haram Royal Bridal Set - Rs. 4,850</option>
+                  <option value="Zamarrud Emerald Polki Jhumkas|2250">Zamarrud Emerald Polki Jhumkas - Rs. 2,250</option>
+                  <option value="Shehnai Carved Antique Karay (Pair)|3150">Shehnai Carved Antique Karay (Pair) - Rs. 3,150</option>
+                  <option value="Dastoor Velvet Guluband Choker|3650">Dastoor Velvet Guluband Choker - Rs. 3,650</option>
+                  <option value="Sitara Full Baroque Mala & Choker|6950">Sitara Full Baroque Mala & Choker - Rs. 6,950</option>
+                  <option value="Teardrop Emerald Pendant Set|2450">Teardrop Emerald Pendant Set - Rs. 2,450</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Complete Delivery Address -->
+            <div class="md:col-span-2">
+              <label class="block text-xs font-semibold text-brandGold uppercase tracking-wider mb-2">
+                Complete Delivery Address (Ghar ka mukammal pata) *
+              </label>
+              <div class="relative">
+                <i class="fa-solid fa-map-location-dot absolute left-4 top-3.5 text-brandGold/70"></i>
+                <textarea 
+                  id="cust-address" 
+                  rows="2" 
+                  required 
+                  placeholder="House #, Street #, Sector / Colony, Landmark, Area Name" 
+                  class="w-full bg-brandEmerald border border-brandGold/40 rounded-xl pl-11 pr-4 py-3 text-sm text-brandCream placeholder-brandCream/40 focus:border-brandGold focus:ring-1 focus:ring-brandGold outline-none"
+                ></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Price & Order Summary Box -->
+          <div class="bg-brandEmerald p-5 rounded-xl border border-brandGold/30 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-left w-full sm:w-auto">
+              <span class="text-xs text-brandCream/70">Payment Method:</span>
+              <div class="text-brandGold font-bold text-sm flex items-center gap-1.5">
+                <i class="fa-solid fa-hand-holding-dollar"></i> Cash On Delivery (Doorstep Payment)
+              </div>
+              <p class="text-[11px] text-brandCream/60 mt-0.5">Shipping: <span class="text-green-400 font-bold">FREE DELIVERY</span> all across Pakistan</p>
+            </div>
+            
+            <div class="text-right w-full sm:w-auto flex items-center justify-between sm:justify-end gap-6">
+              <div>
+                <span class="text-xs text-brandCream/70 block">Total Payable:</span>
+                <span id="display-total" class="font-serif font-bold text-2xl text-brandGold">Rs. 4,850</span>
+              </div>
+              <button 
+                type="submit" 
+                class="bg-gradient-to-r from-brandGold to-brandGoldDark text-brandEmeraldDark font-bold px-6 py-3.5 rounded-xl uppercase tracking-wider text-xs sm:text-sm hover:brightness-110 active:scale-95 transition-all shadow-gold flex items-center gap-2"
+              >
+                <i class="fa-brands fa-whatsapp text-lg text-brandEmeraldDark"></i>
+                Confirm via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Small Trust note -->
+          <div class="flex items-center justify-center gap-4 text-xs text-brandCream/70 pt-1">
+            <span><i class="fa-solid fa-lock text-brandGold mr-1"></i> 100% Safe & Confidential</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-box text-brandGold mr-1"></i> Discreet Premium Packaging</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-phone text-brandGold mr-1"></i> Order Desk: 0302 5118800</span>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Authentic User Reviews Section -->
+  <section id="reviews" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="flex items-center justify-center gap-2 mb-2">
+        <span class="h-0.5 w-12 bg-brandGold"></span>
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-brandEmerald">Verified Feedback</span>
+        <span class="h-0.5 w-12 bg-brandGold"></span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brandEmerald">
+        Words From Our Royal Brides & Customers
+      </h2>
+      <p class="text-brandRichBrown/80 text-sm mt-3">
+        Over 10,000+ satisfied clients across Lahore, Karachi, Islamabad, Faisalabad and overseas Pakistanis.
+      </p>
+
+      <!-- Overall Rating Banner -->
+      <div class="mt-6 inline-flex items-center gap-3 bg-white border border-brandGold/40 px-6 py-2 rounded-full shadow-sm">
+        <div class="flex text-amber-500 text-sm">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <span class="text-brandEmerald font-bold text-sm">4.9 / 5.0</span>
+        <span class="text-gray-400 text-xs">|</span>
+        <span class="text-xs text-brandRichBrown/80 font-medium">1,420+ Verified COD Orders</span>
+      </div>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-white p-6 rounded-2xl border border-brandGold/30 shadow-md hover:shadow-lg transition-shadow relative flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-[10px] bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+              <i class="fa-solid fa-check-circle"></i> Verified COD Buyer
+            </span>
+          </div>
+          <p class="text-brandRichBrown/90 text-sm italic leading-relaxed">
+            "Mene Noor-e-Haram bridal choker set mangwaya tha apni cousin ki shaadi k liye. Honestly real gold jaisi shine hy or weight bhi perfect hy. Box opening pe rider ko cash dia. Packaging bht luxury thi!"
+          </p>
+        </div>
+        <div class="flex items-center gap-3 mt-6 pt-4 border-t border-brandCream">
+          <div class="w-10 h-10 rounded-full bg-brandEmerald text-brandGold font-serif font-bold flex items-center justify-center">
+            A
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-brandEmerald">Areeba Siddiqui</h4>
+            <p class="text-xs text-gray-500">DHA Phase 6, Lahore</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white p-6 rounded-2xl border border-brandGold/30 shadow-md hover:shadow-lg transition-shadow relative flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-[10px] bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+              <i class="fa-solid fa-check-circle"></i> Verified COD Buyer
+            </span>
+          </div>
+          <p class="text-brandRichBrown/90 text-sm italic leading-relaxed">
+            "WhatsApp number 0302 5118800 par order dia tha raat ko, next morning tracking code mil gya or 3 din me Sargodha deliver ho gya parcel. Bangles ka screw lock bht smooth hy. 100% recommended!"
+          </p>
+        </div>
+        <div class="flex items-center gap-3 mt-6 pt-4 border-t border-brandCream">
+          <div class="w-10 h-10 rounded-full bg-brandEmerald text-brandGold font-serif font-bold flex items-center justify-center">
+            M
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-brandEmerald">Mahnoor Bilal</h4>
+            <p class="text-xs text-gray-500">Satellite Town, Sargodha</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white p-6 rounded-2xl border border-brandGold/30 shadow-md hover:shadow-lg transition-shadow relative flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex text-amber-500 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-[10px] bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+              <i class="fa-solid fa-check-circle"></i> Verified COD Buyer
+            </span>
+          </div>
+          <p class="text-brandRichBrown/90 text-sm italic leading-relaxed">
+            "Zamarrud Jhumkas are breathtaking. Stones ki finishing bht clean hy bilkul bhi local artificial jewellery jesi nahi. My mother loved it so much that we ordered the choker set as well."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 mt-6 pt-4 border-t border-brandCream">
+          <div class="w-10 h-10 rounded-full bg-brandEmerald text-brandGold font-serif font-bold flex items-center justify-center">
+            Z
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-brandEmerald">Zainab Farooq</h4>
+            <p class="text-xs text-gray-500">Clifton, Karachi</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Review Action Callout -->
+    <div class="mt-12 text-center">
+      <button onclick="openReviewModal()" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-brandEmerald hover:text-brandGold transition-colors border-b-2 border-brandGold pb-1">
+        <i class="fa-solid fa-pen-nib"></i> Share Your Riwaj Experience / Leave Review
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Brand Craftsmanship Banner (Emerald Royal Box Showcase) -->
+  <section class="bg-brandEmerald text-brandCream py-16 border-y border-brandGold/40 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Text & Features -->
+        <div class="lg:col-span-6 space-y-5 text-center lg:text-left">
+          <span class="text-brandGold font-bold text-xs uppercase tracking-[0.25em]">Royal Unboxing Experience</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+            Every Piece Arrives In A Handcrafted Emerald Velvet Box
+          </h2>
+          <p class="text-brandCream/80 text-sm leading-relaxed">
+            Hum jaante hain k jewellery khareedna ek jazbaati ehsaas hai. Riwaj Collection ka har order anti-tarnish royal emerald velvet case, gold embossed brand seal, aur luxury shopping bag k sath pack hota hai—ready for Barat, Walima, Anniversaries ya Eid gifting.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div class="bg-brandEmeraldDark/90 p-3 rounded-xl border border-brandGold/30 flex items-center gap-3 text-xs">
+              <div class="w-8 h-8 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <span class="text-brandCream font-medium">Anti-Tarnish Velvet Cushion</span>
+            </div>
+            <div class="bg-brandEmeraldDark/90 p-3 rounded-xl border border-brandGold/30 flex items-center gap-3 text-xs">
+              <div class="w-8 h-8 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <span class="text-brandCream font-medium">Royal Green Gift Carry Bag</span>
+            </div>
+            <div class="bg-brandEmeraldDark/90 p-3 rounded-xl border border-brandGold/30 flex items-center gap-3 text-xs">
+              <div class="w-8 h-8 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-tag"></i>
+              </div>
+              <span class="text-brandCream font-medium">Gold Foil Authenticity Tag</span>
+            </div>
+            <div class="bg-brandEmeraldDark/90 p-3 rounded-xl border border-brandGold/30 flex items-center gap-3 text-xs">
+              <div class="w-8 h-8 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <span class="text-brandCream font-medium">Damage-Proof Hard Shell</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Luxury Jewellery Velvet Box & Brand Packaging Mockup -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative mx-auto max-w-lg">
+            <!-- Glow effect -->
+            <div class="absolute -inset-2 bg-brandGold/20 rounded-3xl blur-xl"></div>
+
+            <div class="relative rounded-2xl overflow-hidden border-2 border-brandGold/60 shadow-2xl bg-brandEmeraldDark">
+              <img 
+                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80" 
+                alt="Riwaj Collection Royal Velvet Jewellery Packaging" 
+                class="w-full h-80 sm:h-96 object-cover object-center"
+                onerror="this.src='https://placehold.co/900x600/0D3B32/C6A15B?text=Riwaj+Jewellery+Velvet+Box'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brandEmeraldDark via-transparent to-transparent"></div>
+
+              <!-- Brand Medallion Overlay Badge -->
+              <div class="absolute top-4 right-4 bg-brandEmerald/95 backdrop-blur-sm border border-brandGold px-3 py-1.5 rounded-full flex items-center gap-2 shadow-lg">
+                <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
+                <span class="text-[11px] font-bold text-brandGold uppercase tracking-wider">Free Gift Packaging</span>
+              </div>
+
+              <!-- Bottom Tagline Pill -->
+              <div class="absolute bottom-4 left-4 right-4 bg-brandEmerald/90 backdrop-blur-md p-3.5 rounded-xl border border-brandGold/40 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-brandEmeraldDark border border-brandGold text-brandGold flex items-center justify-center font-serif font-bold text-sm">
+                    R
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-brandCream">Riwaj Signature Unboxing</h5>
+                    <p class="text-[10px] text-brandGold">Standard with every Cash on Delivery Order</p>
+                  </div>
+                </div>
+                <a href="#cod-order" class="text-[11px] bg-brandGold hover:bg-brandGoldDark text-brandEmeraldDark font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider transition-colors">
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brandEmeraldDark text-brandCream border-t border-brandGold/30 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-brandGold/20">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3.5">
+            
+            <!-- Footer Logo (Synced with main logo image/vector) -->
+            <div class="w-14 h-14 rounded-full border-2 border-brandGold bg-brandEmerald p-1 relative shadow-gold flex items-center justify-center overflow-hidden">
+              <img 
+                id="footer-brand-logo-img" 
+                src="logo.png" 
+                alt="Riwaj Collection" 
+                class="brand-logo-target w-full h-full object-contain hidden"
+                onload="handleLogoLoadSuccess(this)"
+              />
+              <div id="footer-brand-logo-svg" class="brand-logo-fallback w-full h-full flex items-center justify-center">
+                <svg viewBox="0 0 200 200" class="w-full h-full" fill="none">
+                  <circle cx="100" cy="100" r="90" stroke="#C6A15B" stroke-width="2" stroke-dasharray="6 3"/>
+                  <circle cx="100" cy="100" r="76" fill="#0D3B32" stroke="#F9E7BA" stroke-width="1.2"/>
+                  <path d="M82 66 L98 66 C114 66, 126 73, 126 86 C126 96, 118 103, 106 106 L128 134 L114 134 L95 108 L82 108 L82 134 L72 134 L72 66 Z M82 76 L82 98 L98 98 C108 98, 114 94, 114 87 C114 80, 108 76, 98 76 Z" fill="#C6A15B" />
+                  <path d="M96 95 C108 85, 122 92, 116 106 C112 114, 102 112, 104 122 C105 127, 110 128, 115 127" stroke="#F9E7BA" stroke-width="1.8" fill="none"/>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <span class="font-serif tracking-[0.2em] text-lg font-bold gold-gradient-text uppercase">RIWAJ</span>
+              <p class="font-sans text-[9px] tracking-[0.3em] text-brandGold uppercase font-semibold">✦ COLLECTION ✦</p>
+              <p class="text-[8px] tracking-[0.15em] text-brandCream/60 uppercase">Elegance In Every Detail</p>
+            </div>
+          </div>
+          <p class="text-xs text-brandCream/75 leading-relaxed">
+            Elegance in Every Detail. Pakistan's trusted destination for 24K gold plated bridal sets, chokers, jhumkas, and custom artificial jewellery.
+          </p>
+          <div class="text-xs text-brandGold font-semibold">
+            Cash On Delivery Nationwide
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="font-serif font-bold text-sm text-brandGold uppercase tracking-wider mb-4">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs text-brandCream/80">
+            <li><a href="#collection" class="hover:text-brandGold transition-colors">Bridal Collection 2026</a></li>
+            <li><a href="#collection" class="hover:text-brandGold transition-colors">Antique Gold Chokers</a></li>
+            <li><a href="#collection" class="hover:text-brandGold transition-colors">Kundan & Polki Jhumkas</a></li>
+            <li><a href="#cod-order" class="hover:text-brandGold transition-colors">Cash On Delivery Order</a></li>
+            <li><a href="#reviews" class="hover:text-brandGold transition-colors">Customer Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care & WhatsApp -->
+        <div>
+          <h4 class="font-serif font-bold text-sm text-brandGold uppercase tracking-wider mb-4">Customer Support</h4>
+          <div class="space-y-3 text-xs text-brandCream/80">
+            <p class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-brandGold text-base"></i>
+              <span>WhatsApp: <strong>0302 5118800</strong></span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-clock text-brandGold"></i>
+              <span>Daily: 10:00 AM - 11:00 PM</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-truck text-brandGold"></i>
+              <span>TCS / Leopards / Call Courier</span>
+            </p>
+            <a href="https://wa.me/923025118800?text=Salam%20Riwaj%20Collection,%20I%20have%20a%20question" target="_blank" class="inline-block mt-2 text-xs bg-brandGold text-brandEmeraldDark font-bold px-3 py-1.5 rounded-lg">
+              Chat on WhatsApp <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 4: Safe Shopping Guarantee -->
+        <div>
+          <h4 class="font-serif font-bold text-sm text-brandGold uppercase tracking-wider mb-4">Trust Guarantee</h4>
+          <p class="text-xs text-brandCream/75 mb-3 leading-relaxed">
+            All parcels are sent with official tracking ID. You have the right to inspect package safety upon arrival.
+          </p>
+          <div class="p-3 bg-brandEmerald rounded-xl border border-brandGold/30 text-center">
+            <span class="text-xs text-brandGold font-bold block mb-1">CASH ON DELIVERY</span>
+            <span class="text-[11px] text-brandCream/80">No advance payment needed for standard orders!</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brandCream/60">
+        <p>© 2026 Riwaj Collection. All Rights Reserved. Elegance in Every Detail.</p>
+        <p class="flex items-center gap-2">
+          <span>Crafted for Luxury Shopping in Pakistan</span>
+          <span>•</span>
+          <span class="text-brandGold font-bold">Helpline: 0302 5118800</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Box (No alert() used) -->
+  <div id="toast-box" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 opacity-0 pointer-events-none">
+    <div class="bg-brandEmeraldDark text-brandCream border-2 border-brandGold px-6 py-3.5 rounded-full shadow-2xl flex items-center gap-3 text-sm font-medium">
+      <i class="fa-solid fa-circle-check text-brandGold text-lg"></i>
+      <span id="toast-message">Item added successfully!</span>
+    </div>
+  </div>
+
+  <!-- Review Submission Modal -->
+  <div id="review-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-brandCream text-brandRichBrown rounded-2xl max-w-md w-full p-6 border-2 border-brandGold shadow-2xl relative">
+      <button onclick="closeReviewModal()" class="absolute top-4 right-4 text-gray-500 hover:text-black text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center mb-4">
+        <div class="w-12 h-12 rounded-full bg-brandEmerald text-brandGold mx-auto flex items-center justify-center text-xl mb-2">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h3 class="font-serif font-bold text-xl text-brandEmerald">Share Your Review</h3>
+        <p class="text-xs text-gray-600">Your feedback inspires thousands of our customers</p>
+      </div>
+
+      <form onsubmit="submitReview(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold uppercase mb-1">Your Name</label>
+          <input type="text" id="rev-name" required placeholder="e.g. Sana Javed" class="w-full bg-white border border-gray-300 rounded-lg px-3 py-2 text-sm focus:border-brandGold outline-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase mb-1">City</label>
+          <input type="text" id="rev-city" required placeholder="e.g. Lahore / Islamabad" class="w-full bg-white border border-gray-300 rounded-lg px-3 py-2 text-sm focus:border-brandGold outline-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase mb-1">Rating</label>
+          <div class="flex gap-2 text-amber-500 text-lg cursor-pointer">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase mb-1">Review Message</label>
+          <textarea id="rev-msg" required rows="3" placeholder="Tell us how you liked the jewellery quality, gold plating & delivery..." class="w-full bg-white border border-gray-300 rounded-lg px-3 py-2 text-sm focus:border-brandGold outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-brandEmerald hover:bg-brandEmeraldDark text-brandGold font-bold py-3 rounded-xl uppercase tracking-wider text-xs shadow-md transition-all">
+          Submit Review
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Sticky WhatsApp Button (Directed to 03025118800) -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+    <a 
+      href="https://wa.me/923025118800?text=Salam%20Riwaj%20Collection,%20I%20want%20to%20place%20an%20order%20for%20artificial%20jewellery" 
+      target="_blank" 
+      class="group flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba59] text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-white/40"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp text-2xl animate-bounce"></i>
+      <div class="text-left hidden sm:block">
+        <span class="block text-[10px] uppercase font-bold text-white/90 leading-none">Order on WhatsApp</span>
+        <span class="font-bold text-xs tracking-wide">0302 5118800</span>
+      </div>
+    </a>
+  </div>
+
+  <script>
+    // Price lookup for dropdown calculation
+    const products = {
+      'Noor-e-Haram Royal Bridal Set|4850': { name: 'Noor-e-Haram Royal Bridal Set', price: 4850 },
+      'Zamarrud Emerald Polki Jhumkas|2250': { name: 'Zamarrud Emerald Polki Jhumkas', price: 2250 },
+      'Shehnai Carved Antique Karay (Pair)|3150': { name: 'Shehnai Carved Antique Karay (Pair)', price: 3150 },
+      'Dastoor Velvet Guluband Choker|3650': { name: 'Dastoor Velvet Guluband Choker', price: 3650 },
+      'Sitara Full Baroque Mala & Choker|6950': { name: 'Sitara Full Baroque Mala & Choker', price: 6950 },
+      'Teardrop Emerald Pendant Set|2450': { name: 'Teardrop Emerald Pendant Set', price: 2450 },
+      'Mughlai Kundan Choker Set|4450': { name: 'Mughlai Kundan Choker Set', price: 4450 }
+    };
+
+    // Category filtering
+    function filterCategory(category, btnElement) {
+      const cards = document.querySelectorAll('.product-card');
+      const buttons = document.querySelectorAll('.category-btn');
+
+      buttons.forEach(b => {
+        b.classList.remove('bg-brandEmerald', 'text-brandGold', 'shadow-md');
+        b.classList.add('bg-white', 'text-brandRichBrown');
+      });
+
+      btnElement.classList.remove('bg-white', 'text-brandRichBrown');
+      btnElement.classList.add('bg-brandEmerald', 'text-brandGold', 'shadow-md');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Dynamic price calculation on selector change
+    function updatePriceCalculation() {
+      const select = document.getElementById('cust-product');
+      const val = select.value;
+      const parts = val.split('|');
+      const price = parts[1] || '4850';
+      document.getElementById('display-total').textContent = 'Rs. ' + parseInt(price).toLocaleString();
+    }
+
+    // Quick Order action from product grid
+    function quickOrder(productName, price) {
+      const select = document.getElementById('cust-product');
+      const targetVal = `${productName}|${price}`;
+      
+      // Check if option exists, otherwise add it dynamically
+      let exists = false;
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === targetVal) {
+          select.selectedIndex = i;
+          exists = true;
+          break;
+        }
+      }
+
+      if (!exists) {
+        const newOpt = new Option(`${productName} - Rs. ${price.toLocaleString()}`, targetVal, true, true);
+        select.add(newOpt);
+      }
+
+      updatePriceCalculation();
+      
+      // Smooth scroll to order section
+      const orderSec = document.getElementById('cod-order');
+      orderSec.scrollIntoView({ behavior: 'smooth' });
+      
+      showToast(`Selected "${productName}" - Complete your address below`);
+    }
+
+    // WhatsApp Order Submission directly formatted to 03025118800
+    function handleOrderSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('cust-name').value.trim();
+      const phone = document.getElementById('cust-phone').value.trim();
+      const city = document.getElementById('cust-city').value.trim();
+      const address = document.getElementById('cust-address').value.trim();
+      const productSelect = document.getElementById('cust-product').value.split('|');
+      const itemTitle = productSelect[0];
+      const itemPrice = parseInt(productSelect[1]).toLocaleString();
+
+      if (!name || !phone || !city || !address) {
+        showToast("Please fill all required delivery details!");
+        return;
+      }
+
+      // Elegant formatted message for WhatsApp Order Desk
+      const message = 
+`*✨ NEW ORDER - RIWAJ COLLECTION ✨*
+━━━━━━━━━━━━━━━━━━━━
+👑 *Product:* ${itemTitle}
+💰 *Total Payable:* Rs. ${itemPrice}
+🚚 *Payment Method:* Cash On Delivery (COD)
+📦 *Delivery Charge:* FREE (Special Promotion)
+━━━━━━━━━━━━━━━━━━━━
+👤 *Customer Name:* ${name}
+📞 *Contact Number:* ${phone}
+🏙️ *City:* ${city}
+📍 *Delivery Address:* ${address}
+━━━━━━━━━━━━━━━━━━━━
+_Assalam o Alaikum! Please confirm my order dispatch with tracking ID. Shukriya!_`;
+
+      const encodedMessage = encodeURIComponent(message);
+      // Official WhatsApp format: 923025118800 (Pakistan country code + phone without 0)
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=923025118800&text=${encodedMessage}`;
+
+      showToast("Redirecting to WhatsApp to finalize your COD order...");
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 1000);
+    }
+
+    // Non-intrusive Toast Notification
+    function showToast(msg) {
+      const toast = document.getElementById('toast-box');
+      const msgEl = document.getElementById('toast-message');
+      msgEl.textContent = msg;
+      
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'pointer-events-auto');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'pointer-events-auto');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 4000);
+    }
+
+    // Review Modal Handlers
+    function openReviewModal() {
+      const modal = document.getElementById('review-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeReviewModal() {
+      const modal = document.getElementById('review-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function submitReview(e) {
+      e.preventDefault();
+      closeReviewModal();
+      showToast("Shukriya! Your review has been submitted for moderation.");
+    }
+
+    // Image vs SVG logo fallback handler
+    function handleLogoLoadSuccess(imgElement) {
+      imgElement.classList.remove('hidden');
+      const fallbackSvg = document.getElementById(imgElement.id.replace('-img', '-svg'));
+      if (fallbackSvg) fallbackSvg.classList.add('hidden');
+    }
+
+    function handleLogoLoadError(imgElement) {
+      imgElement.classList.add('hidden');
+      const fallbackSvg = document.getElementById(imgElement.id.replace('-img', '-svg'));
+      if (fallbackSvg) fallbackSvg.classList.remove('hidden');
+    }
+
+    // Handles direct user upload from browser (persists in session / localStorage)
+    function handleUserLogoUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const logoDataUrl = e.target.result;
+        
+        // Update all logo targets
+        const targetImgs = document.querySelectorAll('.brand-logo-target');
+        const fallbackSvgs = document.querySelectorAll('.brand-logo-fallback');
+
+        targetImgs.forEach(img => {
+          img.src = logoDataUrl;
+          img.classList.remove('hidden');
+        });
+
+        fallbackSvgs.forEach(svg => {
+          svg.classList.add('hidden');
+        });
+
+        try {
+          localStorage.setItem('riwaj_custom_logo', logoDataUrl);
+        } catch (err) {
+          console.warn('Storage quota exceeded');
+        }
+
+        showToast("Original Logo updated successfully!");
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Restore saved logo from localStorage on page load if present
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLogo = localStorage.getItem('riwaj_custom_logo');
+      if (savedLogo) {
+        const targetImgs = document.querySelectorAll('.brand-logo-target');
+        const fallbackSvgs = document.querySelectorAll('.brand-logo-fallback');
+
+        targetImgs.forEach(img => {
+          img.src = savedLogo;
+          img.classList.remove('hidden');
+        });
+
+        fallbackSvgs.forEach(svg => {
+          svg.classList.add('hidden');
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
